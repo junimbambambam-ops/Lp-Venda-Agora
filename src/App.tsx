@@ -454,8 +454,21 @@ export default function App() {
                 </div>
               </div>
 
+              {/* Pricing Info */}
+              <div className="mt-12 text-center relative z-10">
+                <p className="text-[#50a2ff] text-lg md:text-xl font-black tracking-widest uppercase mb-2">
+                  Super promoção em destaque
+                </p>
+                <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6">
+                  <span className="text-gray-500 text-2xl md:text-3xl line-through decoration-red-500/50 font-bold">De R$ 199,00</span>
+                  <span className="text-white text-4xl md:text-6xl font-black">
+                    Por apenas <span className="text-yellow-400 drop-shadow-[0_0_15px_rgba(250,204,21,0.4)]">R$ 19,99</span>
+                  </span>
+                </div>
+              </div>
+
               {/* Bonus CTA Button */}
-              <div className="mt-12 flex justify-center">
+              <div className="mt-10 flex justify-center">
                 <motion.a 
                   href={whatsappLink}
                   target="_blank"
@@ -527,6 +540,19 @@ export default function App() {
                   </motion.div>
                   <h4 className="text-white font-bold text-[21px] mb-3">Bônus Exclusivos</h4>
                   <p className="text-gray-500 text-[14px] leading-relaxed font-bold">Método B.R.I.L.H.A.R. + checklists prontos para usar</p>
+                </div>
+              </div>
+
+              {/* Pricing Info */}
+              <div className="mb-12 text-center">
+                <p className="text-[#50a2ff] text-lg md:text-xl font-black tracking-widest uppercase mb-2">
+                  Super promoção em destaque
+                </p>
+                <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6">
+                  <span className="text-gray-500 text-2xl md:text-3xl line-through decoration-red-500/50 font-bold">De R$ 199,00</span>
+                  <span className="text-white text-4xl md:text-6xl font-black">
+                    Por apenas <span className="text-[#50a2ff] drop-shadow-[0_0_15px_rgba(80,162,255,0.4)]">R$ 19,99</span>
+                  </span>
                 </div>
               </div>
 
