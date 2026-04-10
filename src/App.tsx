@@ -91,9 +91,20 @@ export default function App() {
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              animate={{ opacity: [1, 0.9, 1], scale: [1, 1.03, 1] }}
-              transition={{ duration: 2, repeat: Infinity }}
-              className="inline-flex relative overflow-hidden bg-[#50a2ff] text-[#040424] px-6 py-3 md:px-12 md:py-5 rounded-full text-xs md:text-xl font-black tracking-widest items-center justify-center gap-2 md:gap-4 shadow-[0_0_60px_rgba(80,162,255,0.4)] border-2 border-white/20 w-fit group transition-colors duration-300"
+              animate={{ 
+                scale: [1, 1.02, 1],
+                boxShadow: [
+                  "0 0 20px rgba(80,162,255,0.2)",
+                  "0 0 40px rgba(80,162,255,0.4)",
+                  "0 0 20px rgba(80,162,255,0.2)"
+                ]
+              }}
+              transition={{ 
+                duration: 3, 
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              className="inline-flex relative overflow-hidden bg-[#50a2ff] text-[#040424] px-6 py-3 md:px-12 md:py-5 rounded-full text-xs md:text-xl font-black tracking-widest items-center justify-center gap-2 md:gap-4 border-2 border-white/20 w-fit group transition-colors duration-300"
             >
               {/* Glass Reflection Effect */}
               <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
@@ -237,9 +248,23 @@ export default function App() {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
+                animate={{ 
+                  scale: [1, 1.02, 1],
+                  boxShadow: [
+                    "0 0 20px rgba(80,162,255,0.2)",
+                    "0 0 40px rgba(80,162,255,0.4)",
+                    "0 0 20px rgba(80,162,255,0.2)"
+                  ]
+                }}
+                transition={{ 
+                  duration: 3, 
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 0.5
+                }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex relative overflow-hidden bg-[#50a2ff] text-[#040424] px-6 py-3 md:px-12 md:py-6 rounded-full text-sm md:text-xl font-black tracking-widest items-center justify-center gap-2 md:gap-4 shadow-[0_0_60px_rgba(80,162,255,0.4)] border-2 border-white/20 group transition-all duration-300"
+                className="inline-flex relative overflow-hidden bg-[#50a2ff] text-[#040424] px-6 py-3 md:px-12 md:py-6 rounded-full text-sm md:text-xl font-black tracking-widest items-center justify-center gap-2 md:gap-4 border-2 border-white/20 group transition-all duration-300"
               >
                 <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
                 <span className="font-bold tracking-tight uppercase group-hover:text-white transition-colors duration-300">Quero esse método</span>
@@ -431,9 +456,23 @@ export default function App() {
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
+              animate={{ 
+                scale: [1, 1.02, 1],
+                boxShadow: [
+                  "0 0 20px rgba(80,162,255,0.2)",
+                  "0 0 40px rgba(80,162,255,0.4)",
+                  "0 0 20px rgba(80,162,255,0.2)"
+                ]
+              }}
+              transition={{ 
+                duration: 3, 
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 1
+              }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex relative overflow-hidden bg-[#50a2ff] text-[#040424] px-8 py-4 md:px-12 md:py-5 rounded-full text-sm md:text-xl font-black tracking-widest items-center justify-center gap-2 md:gap-4 shadow-[0_0_60px_rgba(80,162,255,0.4)] border-2 border-white/20 group transition-all duration-300"
+              className="inline-flex relative overflow-hidden bg-[#50a2ff] text-[#040424] px-8 py-4 md:px-12 md:py-5 rounded-full text-sm md:text-xl font-black tracking-widest items-center justify-center gap-2 md:gap-4 border-2 border-white/20 group transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
               <span className="font-bold tracking-tight group-hover:text-white transition-colors duration-300 uppercase">Quero esse método</span>
@@ -507,9 +546,22 @@ export default function App() {
                   href={whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
+                  animate={{ 
+                    scale: [1, 1.02, 1],
+                    boxShadow: [
+                      "0 0 10px rgba(255,255,255,0.1)",
+                      "0 0 30px rgba(255,255,255,0.3)",
+                      "0 0 10px rgba(255,255,255,0.1)"
+                    ]
+                  }}
+                  transition={{ 
+                    duration: 3, 
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-white text-[#040424] hover:bg-blue-50 px-6 py-3 md:px-12 md:py-5 rounded-2xl font-black text-sm md:text-xl shadow-[0_0_40px_rgba(80,162,255,0.2)] border-2 border-[#50a2ff]/20 flex items-center gap-2 md:gap-4 transition-all group/btn"
+                  className="bg-white text-[#040424] hover:bg-blue-50 px-6 py-3 md:px-12 md:py-5 rounded-2xl font-black text-sm md:text-xl border-2 border-[#50a2ff]/20 flex items-center gap-2 md:gap-4 transition-all group/btn"
                 >
                   <ArrowUpRight className="w-5 h-5 md:w-6 md:h-6 text-[#50a2ff] group-hover/btn:rotate-45 transition-transform" />
                   <span className="font-bold tracking-tight uppercase">GARANTIR MEU ACESSO VIA WHATSAPP</span>
@@ -598,8 +650,21 @@ export default function App() {
                   href={whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
+                  animate={{ 
+                    scale: [1, 1.03, 1],
+                    boxShadow: [
+                      "0 0 15px rgba(255,255,255,0.1)",
+                      "0 0 40px rgba(255,255,255,0.4)",
+                      "0 0 15px rgba(255,255,255,0.1)"
+                    ]
+                  }}
+                  transition={{ 
+                    duration: 2.5, 
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                   className="bg-white text-[#040424] px-6 py-4 md:px-12 md:py-6 rounded-2xl font-black text-sm md:text-xl flex items-center gap-2 md:gap-4 shadow-2xl group transition-all animate-shine"
                 >
                   <ArrowUpRight className="w-5 h-5 md:w-6 md:h-6 text-[#50a2ff] group-hover:rotate-45 transition-transform" />
